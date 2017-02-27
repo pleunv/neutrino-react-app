@@ -1,0 +1,78 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "author": "Pleun Vanderbauwhede",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "config": {
+    "presets": [
+      "neutrino-preset-airbnb-base",
+      "neutrino-preset-react",
+      "neutrino-custom.js"
+    ],
+    "neutrino": {
+      "entry": {
+        "vendor": [
+          "apollo-client",
+          "history",
+          "react",
+          "react-apollo",
+          "react-dom",
+          "react-redux",
+          "react-router",
+          "react-router-redux",
+          "redux",
+          "redux-observable",
+          "redux-thunk",
+          "rxjs",
+          "store"
+        ]
+      }
+    }
+  },
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build",
+    "test": "neutrino test"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 10",
+    "edge >= 12",
+    "last 10 firefox versions",
+    "last 10 chrome versions",
+    "safari >= 8",
+    "last 10 opera versions",
+    "ios_saf >= 7",
+    "android >= 4"
+  ],
+  "devDependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "deepmerge": "^1.3.2",
+    "eslint-import-resolver-webpack": "^0.8.1",
+    "neutrino": "^4.2.1",
+    "neutrino-preset-airbnb-base": "^4.3.1",
+    "neutrino-preset-jest": "^4.2.1",
+    "neutrino-preset-react": "^4.2.0",
+    "react-hot-loader": "next"
+  },
+  "dependencies": {
+    "apollo-client": "^0.9.0",
+    "history": "3.x.x",
+    "react": "^15.4.2",
+    "react-apollo": "^0.12.0",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-observable": "^0.13.0",
+    "redux-thunk": "^2.2.0",
+    "rxjs": "^5.2.0",
+    "store": "^1.3.20"
+  }
+}
